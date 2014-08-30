@@ -7,6 +7,7 @@ body{
 header{
 	background-image: url('../img/wayfinder_500_paint.png');
 	height: 500px;
+	overflow: hidden;
 
 
 }
@@ -35,23 +36,26 @@ header{
 .headertext{
 	/*text-align: center;*/
 	color: white;
+
 	margin-bottom: 40px;
 	font-weight: bolder;
 	font-size: 3em;
 }
 .headerbutton{
 	/*margin-top:20px;*/
-	background-color: rgb(0,166,81);
+	/*background-color: rgb(0,166,81);*/
+	background-color: #3A9AD9;
 	/*background-color: white;*/
 	color: white;
 	text-align: center;
 	text-decoration: none;
-	border: 1px solid rgb(0,166,81);
+	/*border: 1px solid rgb(0,166,81);*/
+	border: 1px solid #3A9AD9;
 	border-radius: 5px;
 	padding: 8px 30px 8px 30px;
 }
 
-.contentwrap{
+/*.contentwrap1{
 	position: absolute;
 
 	background-color: white;
@@ -59,42 +63,237 @@ header{
 	padding: 80px 150px 80px 150px;
 
 }
-
+*/
 .introwrap{
-	width: 100%;
-	margin-bottom: 80px;
 
+	width: 100%;
+	/*margin-bottom: 50px;*/
+	overflow: hidden;
+	background-color: rgb(38,38,38);
+	/*height: 466px;*/
+
+
+}
+.introinnerwrap, .videoinnerwrap{
+	position: relative;
+
+	padding: 80px 150px 80px 150px;
+	
 }
 .intro-left{
 	padding: 70px 0px 0px 0px;
 	width: 30%;
 	float: left;
+	
 }
-.intro-left h1, .video-right h1{
+.intro-left h1, .video-left h1{
 	font-size: 2em;
 	margin-bottom: 15px;
+	color: rgb(190,190,190);
 }
-.intro-left p, .video-right p{
-	font-size: 1.1em;
+.intro-left p, .video-left p{
+	font-size: 1em;
+	color: #777;
+	line-height: 2em;
+
 }
 .intro-right{
+	position: relative;
 	float: right;
+	width:65%;
+}
+
+.video-right{
+	border: 1px solid;
+	height: 300px;
+	width: 500px;
+	float: right;
+
 }
 
 .video-left{
 	float: left;
-	border: 1px solid;
-	height: 300px;
-	width: 500px;
-
-}
-
-.video-right{
-	float: right;
-	padding: 70px 10px 0px 0px;
+	padding: 70px 0px 0px 0px;
+	width: 30%;
 }
 
 .videowrap{
-	margin-bottom: 80px;
+	background-color: rgb(38,38,38);
+
 }
 
+.browser{
+	width: 100%;
+}
+.browser img{	
+	width: 100%;
+}
+
+.browserbar{
+	background-color: #383838;
+	width: 100%;
+	height: 20px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.browserbtn{
+    display: inline-block;
+	/*margin:0px;*/
+
+}
+.browserbtn:first-of-type{
+	margin-left: 10px;
+}
+.browserbtn:before {
+
+    content: ' \25CF';
+    font-size: 12px;
+}
+
+.mobile{
+	position: absolute;
+	right: -5%;
+	top: 15%;	
+}
+.mobilecontent{
+	line-height: 0px;
+}
+.mobile .mobilecontent img{
+	width: 165px;
+	padding: 0px 10px 0px 10px;
+	background-color: #383838;
+
+}
+
+.mobilecamera:before{
+	content: ' \25CF';
+    font-size: 18px;
+}
+
+.mobilecamera{
+	/*margin:20px;*/
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	text-align: center;
+	background-color: #383838;
+	height: 30px;
+}
+
+.mobileearphone{
+	content: ' ';
+	display: block;
+	background-color: #383838;
+	width: 100%;
+	height: 25px;
+	/*margin: 10px;*/
+	color:black;
+
+	/*border: 10px solid ;*/
+	/*overflow: hidden;*/
+}
+
+.mobilesensor:before{
+	content: ' \25CF';
+    font-size: 12px;
+}
+.mobileear{
+	width:20%;
+	height: 6px;
+	display: block;
+	background-color: black;
+	position: absolute;
+	left: 40%;
+	top: 8%;
+	border-radius: 3px;
+}
+
+.mobilesensor{
+	position: absolute;
+	left: 30%;
+	top: 6.5%;
+}
+
+.mobilehomebuttonpart{
+
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background-color: #383838;
+}
+
+.mobilehomebutton:before{
+	content: ' \25CF';
+    font-size: 50px;
+
+
+}
+.mobilehomebutton{
+	text-align: center;
+}
+.teaminnerwrap{
+	padding: 80px 150px 80px 150px;
+	background-color: rgb(38,38,38);
+
+}
+.teammemberwrap{
+	float: left;
+	/*display: inline-block;*/
+	margin-left: 50px;
+	/*padding: 50px;*/
+	width: 170px;
+	text-align: center;
+
+}
+
+
+.teamtitle{
+	/*text-align: center;*/
+	float: left;
+	padding: 70px 0px 0px 0px;
+	font-size: 2em;
+
+	color: rgb(190,190,190);
+
+}
+
+.teammember{
+	float: right;
+	/*text-align: center;*/
+	font-size: 1em;
+	color: #777;
+
+}
+
+.teammemberwrap h1{
+	font-size: 1.3em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.teammemberwrap p{
+	line-height: 2em;
+}
+footer{
+	text-align: center;
+	height: 150px;
+	background-color: #777;
+}
+
+.copyright, .contact{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0.8em;
+
+}
+.socilnetworkicons{
+	padding: 20px;
+}
+.snicon{
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	color: rgb(38,38,38);
+}
+.snicon i{
+	font-size: 1.8em;
+}
